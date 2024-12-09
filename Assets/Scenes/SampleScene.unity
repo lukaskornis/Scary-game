@@ -351,7 +351,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 2800000, guid: c120c1c04891644debe23bd84d8ef251, type: 3}
+  m_Cookie: {fileID: 2800000, guid: 206f03014160f40c5a22b2b38ea4f283, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
@@ -5666,6 +5666,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3b072fafb0449c28bbd72a8072d431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  energy: 55
+  dischargeSpeed: 4
 --- !u!1 &1993584856
 GameObject:
   m_ObjectHideFlags: 0
