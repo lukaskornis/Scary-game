@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d536b5bb-a786-43fa-b7f6-319820f84708" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/sand-dunes1_albedo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/sand-dunes1_albedo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/sand-dunes1_normal-ogl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/sand-dunes1_normal-ogl.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scary game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scary game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Flashlight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Flashlight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/Components/Jump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/Components/Jump.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/Components/Zoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/Components/Zoom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/FirstPersonMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/FirstPersonMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

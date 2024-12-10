@@ -2,37 +2,40 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    Light light;
+    Light spotLight;
+    public Transform batteryLevelIndicator;
     public float dischargeSpeed = 1;
     public float energy = 100;
 
     void Start()
     {
-        light = GetComponentInChildren<Light>();
-        light.enabled = false;
+        spotLight = GetComponentInChildren<Light>();
+        spotLight.enabled = false;
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F) && energy > 0f)
         {
-            light.enabled = !light.enabled;
+            spotLight.enabled = !spotLight.enabled;
         }
 
-        if (light.enabled)
+        if (spotLight.enabled)
         {
             energy -= Time.deltaTime * dischargeSpeed;
         }
 
         if (energy < 50f)
         {
-            light.intensity = Random.Range(0.8f, 1f);
+            spotLight.intensity = Random.Range(0.8f, 1f);
         }
 
         if (energy < 0f)
         {
-            light.enabled = false;
+            spotLight.enabled = false;
             energy = 0f;
         }
+
+        batteryLevelIndicator.localScale = new Vector3(energy / 100f, 1f, 1f);
     }
 }
