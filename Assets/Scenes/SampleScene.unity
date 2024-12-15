@@ -121,7 +121,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 5d68dd418d8a4440294222b20b2d33fa, type: 2}
 --- !u!1001 &199634722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.89
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalPosition.y
@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.05
+      value: 51.4
       objectReference: {fileID: 0}
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5671,8 +5671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3b072fafb0449c28bbd72a8072d431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energy: 55
-  dischargeSpeed: 4
 --- !u!1 &1993584856
 GameObject:
   m_ObjectHideFlags: 0
@@ -5791,6 +5789,7 @@ GameObject:
   - component: {fileID: 2112578345}
   - component: {fileID: 2112578344}
   - component: {fileID: 2112578348}
+  - component: {fileID: 2112578349}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -5879,13 +5878,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112578343}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.31, y: -2.92, z: 2.94}
+  m_LocalRotation: {x: -0, y: -0.15107256, z: -0, w: 0.9885227}
+  m_LocalPosition: {x: 2.09, y: -2.92, z: 9.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -17.378, z: 0}
 --- !u!114 &2112578348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5898,7 +5897,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e8438686afb43d7aef35ef394717c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  viewDistance: 10
   target: {fileID: 1961847198}
+  speed: 2
+--- !u!195 &2112578349
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112578343}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
