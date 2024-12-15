@@ -4,13 +4,26 @@ using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
 	public float viewDistance = 10f;
+	public float forgetDistance = 12f;
 	public float scareDistance = 3f;
+	public float patrolDistance = 10;
+	public float patrolInterval = 2f;
 	public Transform target;
 	NavMeshAgent agent;
+	Vector3 randomPoint;
+
 
 	void Start()
 	{
 		agent = GetComponent<NavMeshAgent>();
+		InvokeRepeating(nameof(RandomPoint),0f,patrolInterval);
+		randomPoint = transform.position;
+	}
+
+
+	void RandomPoint()
+	{
+		randomPoint += Random.insideUnitSphere * patrolDistance;
 	}
 
 	void OnDrawGizmos()
@@ -27,6 +40,10 @@ public class Enemy : MonoBehaviour
 		if (distance < viewDistance)
 		{
 			agent.SetDestination(target.position);
+		}
+		else
+		{
+			agent.SetDestination(randomPoint);
 		}
 
 		if (distance < scareDistance)
